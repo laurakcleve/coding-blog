@@ -1,7 +1,7 @@
 {
-  "name": "lauracleveland.com",
+  "name": "laura-cleveland-coding-blog",
   "private": true,
-  "description": "The personal blog of Laura Cleveland",
+  "description": "The personal coding blog of Laura Cleveland",
   "version": "0.1.0",
   "author": "Laura Cleveland",
   "dependencies": {
