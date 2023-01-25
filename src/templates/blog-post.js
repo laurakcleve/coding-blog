@@ -1,7 +1,6 @@
 import * as React from 'react'
 import { Link, graphql } from 'gatsby'
 
-import Bio from '../components/bio'
 import Layout from '../components/layout'
 import Seo from '../components/seo'
 
@@ -14,29 +13,21 @@ const BlogPostTemplate = ({
   return (
     <Layout location={location} title={siteTitle}>
       <article itemScope itemType="http://schema.org/Article">
-        <header>
-          <h1 itemProp="headline">{post.frontmatter.title}</h1>
-          <p>{post.frontmatter.date}</p>
+        <header className="mb-14">
+          <h1 itemProp="headline" className="text-3xl font-normal my-3">
+            {post.frontmatter.title}
+          </h1>
+          <p className="text-sm text-zinc-300">{post.frontmatter.date}</p>
         </header>
         <section
           dangerouslySetInnerHTML={{ __html: post.html }}
           itemProp="articleBody"
+          className="markdown-content mb-8"
         />
-        <hr />
-        <footer>
-          <Bio />
-        </footer>
+        <hr className="border-zinc-700" />
       </article>
-      <nav>
-        <ul
-          style={{
-            display: `flex`,
-            flexWrap: `wrap`,
-            justifyContent: `space-between`,
-            listStyle: `none`,
-            padding: 0,
-          }}
-        >
+      <nav className="py-12">
+        <ul>
           <li>
             {previous && (
               <Link to={previous.fields.slug} rel="prev">
