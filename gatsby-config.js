@@ -6,7 +6,7 @@ module.exports = {
       summary: 'a self-taught coder',
     },
     description: 'A personal blog for some programming experiences',
-    siteUrl: 'https://gatsbystarterblogsource.gatsbyjs.io/',
+    siteUrl: 'lauracleveland.com',
     social: {
       twitter: 'laurak_cleve',
     },
