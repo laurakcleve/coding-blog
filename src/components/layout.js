@@ -9,7 +9,7 @@ const Layout = ({ location, title, children }) => {
   return (
     <div
       data-is-root-path={isRootPath}
-      className="bg-zinc-800 min-h-screen text-zinc-50"
+      className="bg-zinc-800 min-h-screen text-zinc-50 px-4"
     >
       <header className="max-w-2xl mx-auto flex items-center py-5">
         <StaticImage
@@ -22,7 +22,7 @@ const Layout = ({ location, title, children }) => {
           alt="Profile picture"
           className="rounded-full mr-4"
         />
-        <Link to="/" className="text-2xl">
+        <Link to="/" className="text-xl sm:text-2xl">
           {title}
         </Link>
       </header>

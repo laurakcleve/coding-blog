@@ -18,12 +18,12 @@ const BlogIndex = ({ data, location }) => {
             <li key={post.fields.slug} className="mb-20">
               <article itemScope itemType="http://schema.org/Article">
                 <header className="mb-5">
-                  <h2 className="text-2xl font-normal my-2">
+                  <h2 className="text-lg sm:text-2xl font-normal my-2 leading-6">
                     <Link to={post.fields.slug} itemProp="url">
                       <span itemProp="headline">{title}</span>
                     </Link>
                   </h2>
-                  <div className="text-sm text-zinc-400">
+                  <div className="text-xs sm:text-sm text-zinc-400">
                     {post.frontmatter.date}
                   </div>
                 </header>
@@ -33,7 +33,7 @@ const BlogIndex = ({ data, location }) => {
                       __html: post.frontmatter.description || post.excerpt,
                     }}
                     itemProp="description"
-                    className="text-zinc-200 font-light"
+                    className="text-zinc-200 font-light text-sm sm:text-base"
                   />
                 </section>
               </article>
