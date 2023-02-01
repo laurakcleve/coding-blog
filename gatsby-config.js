@@ -11,6 +11,7 @@ module.exports = {
       twitter: 'laurak_cleve',
     },
   },
+  jsxRuntime: 'automatic',
   plugins: [
     'gatsby-plugin-image',
     {
