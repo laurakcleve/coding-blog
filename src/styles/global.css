@@ -34,7 +34,7 @@
 .markdown-content code[class*='language-'],
 pre[class*='language-'] {
   text-shadow: none;
-  @apply text-blue-200;
+  @apply text-blue-100;
 }
 
 .markdown-content pre[class*='language-'] {
@@ -44,14 +44,14 @@ pre[class*='language-'] {
 
 .markdown-content blockquote {
   @apply pl-3;
-  @apply border-l-2 border-l-teal-200;
-  @apply text-teal-100;
+  @apply border-l-2 border-l-blue-200;
+  @apply text-blue-200;
 }
 
 .markdown-content blockquote code[class*='language-'] {
-  @apply text-teal-100;
+  @apply text-blue-200;
 }
 
 .markdown-content a {
-  @apply text-cyan-400;
+  @apply text-emerald-300;
 }
