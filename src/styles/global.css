@@ -3,12 +3,20 @@
 @tailwind utilities;
 
 .markdown-content {
-  line-height: 1.7;
+  @apply leading-7;
 }
 
 .markdown-content p {
-  margin-bottom: 16px;
-  font-weight: 300;
+  @apply mb-8;
+  @apply font-light;
+}
+
+.markdown-content .gatsby-highlight {
+  @apply mb-8;
+}
+
+.markdown-content ul {
+  @apply mb-8;
 }
 
 .markdown-content ul {
@@ -17,7 +25,6 @@
 
 .markdown-content li {
   list-style-type: initial;
-  margin-bottom: 8px;
 }
 
 .markdown-content :not(pre) > code[class*='language-'] {
@@ -33,4 +40,20 @@ pre[class*='language-'] {
 .markdown-content pre[class*='language-'] {
   background: #1e1e22;
   border-radius: 10px;
+  white-space: pre-wrap;
+  overflow-x: auto;
+}
+
+.markdown-content blockquote {
+  @apply pl-3;
+  @apply border-l-2 border-l-teal-200;
+  @apply text-teal-100;
+}
+
+.markdown-content blockquote code[class*='language-'] {
+  @apply text-teal-100;
+}
+
+.markdown-content a {
+  @apply text-cyan-400;
 }
