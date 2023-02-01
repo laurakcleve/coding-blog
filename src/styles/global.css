@@ -20,28 +20,26 @@
 }
 
 .markdown-content ul {
-  padding-left: 20px;
+  @apply pl-5;
 }
 
 .markdown-content li {
-  list-style-type: initial;
+  @apply list-disc;
 }
 
 .markdown-content :not(pre) > code[class*='language-'] {
-  background: #202024;
+  @apply bg-zinc-900;
 }
 
 .markdown-content code[class*='language-'],
 pre[class*='language-'] {
   text-shadow: none;
-  color: #d0d0ff;
+  @apply text-blue-200;
 }
 
 .markdown-content pre[class*='language-'] {
-  background: #1e1e22;
-  border-radius: 10px;
-  white-space: pre-wrap;
-  overflow-x: auto;
+  @apply bg-zinc-900;
+  @apply rounded-xl;
 }
 
 .markdown-content blockquote {
