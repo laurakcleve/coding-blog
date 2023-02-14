@@ -13,7 +13,7 @@ const Layout = ({ location, title, children }) => {
       className="bg-zinc-800 min-h-screen text-zinc-50 px-4"
     >
       <header className="max-w-2xl mx-auto flex items-center py-5">
-        <div className="flex items-center flex-1">
+        <Link to="/" className="text-xl sm:text-2xl flex items-center flex-1">
           <StaticImage
             layout="fixed"
             formats={['auto', 'webp', 'avif']}
@@ -24,26 +24,26 @@ const Layout = ({ location, title, children }) => {
             alt="Profile picture"
             className="rounded-full mr-4"
           />
-          <Link to="/" className="text-xl sm:text-2xl">
-            {title}
-          </Link>
-        </div>
+          {title}
+        </Link>
 
         <a
           href="https://twitter.com/laurak_cleve"
           target="_blank"
           rel="noopener noreferrer"
           aria-label="Twitter"
+          class="w-12 h-12 flex items-center justify-center"
         >
-          <TwitterIcon className="fill-emerald-300 w-6" />
+          <TwitterIcon className="fill-emerald-300" />
         </a>
         <a
           href="https://github.com/laurakcleve"
           target="_blank"
           rel="noopener noreferrer"
           aria-label="Github"
+          class="w-12 h-12 flex items-center justify-center"
         >
-          <GithubIcon className="fill-emerald-300 w-6 ml-5" />
+          <GithubIcon className="fill-emerald-300" />
         </a>
       </header>
       <main className="max-w-2xl mx-auto mt-8">{children}</main>
