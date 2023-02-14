@@ -33,6 +33,7 @@ const Layout = ({ location, title, children }) => {
           href="https://twitter.com/laurak_cleve"
           target="_blank"
           rel="noopener noreferrer"
+          aria-label="Twitter"
         >
           <TwitterIcon className="fill-emerald-300 w-6" />
         </a>
@@ -40,6 +41,7 @@ const Layout = ({ location, title, children }) => {
           href="https://github.com/laurakcleve"
           target="_blank"
           rel="noopener noreferrer"
+          aria-label="Github"
         >
           <GithubIcon className="fill-emerald-300 w-6 ml-5" />
         </a>
